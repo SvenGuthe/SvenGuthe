@@ -7,7 +7,7 @@
   <style>
     :root { --ink: #080808; --muted: #525252; --accent: #8cffd2; --accent-warm: #8c1eff; --line: #d9d9d9; --paper: #ffffff; --rail: #f4f4f4; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #e9e9e9; color: var(--ink); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 15px; line-height: 1.55; }
+    body { margin: 0; background: #e9e9e9; color: var(--ink); font-family: "Euclid Circular A", "Euclid", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 15px; line-height: 1.55; }
     .page { max-width: 1160px; margin: 36px auto; overflow: hidden; background: var(--paper); box-shadow: 0 18px 50px rgba(0, 0, 0, .16); }
     header { display: grid; grid-template-columns: 1fr 132px; gap: 36px; align-items: center; padding: 44px 56px 38px; border-top: 8px solid var(--accent); border-bottom: 1px solid var(--line); }
     h1, h2, h3, p { margin: 0; }
@@ -24,6 +24,7 @@
     .contact p + p { margin-top: 8px; }
     .detail, .date, .tagline { color: var(--muted); }
     .summary { margin-top: 14px; padding: 18px 22px; border-left: 4px solid var(--accent-warm); background: #f7faf9; font-size: 16px; line-height: 1.58; }
+    .experience h2 { margin-bottom: 16px; }
     .entry { position: relative; padding-bottom: 22px; }
     .entry + .entry { padding-top: 22px; border-top: 1px solid var(--line); }
     .date { margin: 4px 0 12px; font-size: 14px; font-weight: 650; }
@@ -58,7 +59,7 @@
     <header>
       <div>
         <h1>Sven Guthe</h1>
-        <p class="role">Senior Cloud Architect | Cloud &amp; Software Architecture</p>
+        <p class="role">Consulting Manager | Cloud &amp; Software Architecture</p>
       </div>
       <img class="portrait" src="81df36a1-63ae-4e5a-a68b-966d12ccd080.jpg" alt="Porträt von Sven Guthe">
     </header>
@@ -96,17 +97,18 @@
       <div>
         <section>
           <h2>Profil</h2>
-          <p class="summary">Senior Cloud Architect mit Erfahrung im Automotive- und Manufacturing-Umfeld sowie in Industrial Cloud Solutions, Big-Data-Plattformen und Software- und Enterprise-Architektur. Ich verbinde skalierbare Kubernetes- und OpenShift-Plattformen, Security by Design und moderne Softwarearchitektur mit belastbarer Umsetzung im IT/OT-Kontext. Mein Fokus: technische Visionen in wartbare, sichere und messbar wertstiftende Lösungen zu überführen.</p>
+          <p class="summary">Consulting Manager mit Erfahrung im Automotive- und Manufacturing-Umfeld sowie in Industrial Cloud Solutions, Big-Data-Plattformen und Software- und Enterprise-Architektur. Ich verbinde skalierbare Kubernetes- und OpenShift-Plattformen, Security by Design und moderne Softwarearchitektur mit Umsetzung im IT/OT-Kontext.</p>
         </section>
 
-        <section>
+        <section class="experience">
           <h2>Berufserfahrung</h2>
           <article class="entry">
             <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/MHP_Management-_und_IT-Beratung_logo.svg?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="MHP Logo"><div><h3>Manager | Cloud Architect</h3><p class="date">MHP GmbH, Dresden / Ludwigsburg | seit 07/2026</p></div></div>
             <ul>
               <li>Entwicklung skalierbarer, sicherer und zukunftsfähiger Cloud-Architekturen im industriellen und Automotive-Kontext.</li>
               <li>Architekturarbeit für Kubernetes-, OpenShift- und Industrial-Cloud-Lösungen mit Fokus auf Plattformfähigkeit und Betrieb.</li>
-              <li>Überführung technischer Visionen in tragfähige Architekturentscheidungen und erfolgreiche Umsetzungen mit messbarem Unternehmensnutzen.</li>
+              <li>Implementierung von AI-Lösungen im Manufacturing-Umfeld sowie Überführung technischer Visionen in tragfähige Architekturentscheidungen.</li>
+              <li>Design, Implementierung und Verantwortung für DevOps-Prozesse von der Entwicklung bis zum Betrieb.</li>
               <li>Führung und Weiterentwicklung von Mitarbeitenden sowie Förderung von Architektur- und Cloud-Kompetenzen.</li>
             </ul>
           </article>
@@ -115,7 +117,7 @@
             <ul>
               <li>IT-Beratung und Architektur im IT/OT-Umfeld mit Schwerpunkt Industrial Cloud Solutions und AI.</li>
               <li>Data Engineering und Backend-Entwicklung mit Python, FastAPI, SQLAlchemy und SQL.</li>
-              <li>Design und Umsetzung von CI/CD-Pipelines einschließlich Security- und License-Scans sowie Deploymentkonzepten für Kubernetes / OpenShift.</li>
+              <li>Design, Implementierung und Verantwortung für DevOps-Prozesse, einschließlich CI/CD-Pipelines, Security- und License-Scans sowie Deploymentkonzepten für Kubernetes / OpenShift.</li>
               <li>Leitung der AI-Community für internen Wissensaustausch, Projekte und Innovationen.</li>
             </ul>
           </article>
@@ -141,6 +143,14 @@
           <div class="cert"><a href="https://www.credly.com/badges/eb4ddf93-622f-4a2c-a845-11ef83f4cd5c/linked_in_profile" target="_blank" rel="noreferrer"><strong>AWS Certified Solutions Architect - Associate</strong><small>Amazon Web Services | 03/2023 - 03/2026</small></a></div>
           <div class="cert"><strong>PeopleCert DevOps Fundamentals</strong><small>PeopleCert | 04/2022</small></div>
           <div class="cert"><a href="https://www.credly.com/badges/2987f024-1bae-4a4a-ac74-5f86d76d9d9a/public_url" target="_blank" rel="noreferrer"><strong>Certified SAFe 5 Product Owner / Product Manager</strong><small>Scaled Agile Inc. | 11/2021 - 11/2022</small></a></div>
+          <div class="cert"><strong>ITIL Foundation Certificate in IT Service Management</strong><small>AXELOS Global Best Practice | 08/2016</small></div>
+        </section>
+
+        <section>
+          <h2>Weiterbildungen</h2>
+          <div class="cert"><strong>Connectware Administrator Training</strong><small>Cybus | 06/2025</small></div>
+          <div class="cert"><strong>Mitarbeiterführung für Führungskräftenachwuchs</strong><small>Cybus | 03/2022</small></div>
+          <div class="cert"><strong>Scrum Master Schulung (Inhouse)</strong><small>Cybus | 06/2025</small></div>
         </section>
 
         <section>
@@ -148,7 +158,13 @@
           <div class="education">
             <p><strong>Bachelor of Science (Dual), Angewandte Informatik</strong><span class="detail">DHBW Mannheim | 2014 - 2017 | Abschlussnote 1,9</span></p>
             <p><strong>Master Business Intelligence and Analytics</strong><span class="detail">TU Chemnitz | 2017 - 2019 | ohne Abschluss</span></p>
+            <p><strong>Abitur</strong><span class="detail">Georgius-Agricola-Gymnasium, Glauchau | 2006 - 2014 | Abschlussnote 2,5</span></p>
+            <p><strong>Berufsausbildung: Technischer Assistent für Informatik</strong><span class="detail">BSZ Glauchau | 2009 - 2013</span></p>
           </div>
+        </section>
+        <section>
+          <h2>Auszeichnung</h2>
+          <div class="cert"><strong>DMV-Abiturpreis Mathematik</strong><small>Deutsche Mathematiker-Vereinigung | 2014</small></div>
         </section>
         <p class="footer">Callenberg, 05.09.2026</p>
       </div>

@@ -7,7 +7,7 @@
   <style>
     :root { --ink: #080808; --muted: #525252; --accent: #8cffd2; --accent-warm: #8c1eff; --line: #d9d9d9; --paper: #ffffff; --rail: #f4f4f4; }
     * { box-sizing: border-box; }
-    body { margin: 0; background: #e9e9e9; color: var(--ink); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 15px; line-height: 1.55; }
+    body { margin: 0; background: #e9e9e9; color: var(--ink); font-family: "Euclid Circular A", "Euclid", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-size: 15px; line-height: 1.55; }
     .page { max-width: 1160px; margin: 36px auto; overflow: hidden; background: var(--paper); box-shadow: 0 18px 50px rgba(0, 0, 0, .16); }
     header { display: grid; grid-template-columns: 1fr 132px; gap: 36px; align-items: center; padding: 44px 56px 38px; border-top: 8px solid var(--accent); border-bottom: 1px solid var(--line); }
     h1, h2, h3, p { margin: 0; }
@@ -24,6 +24,7 @@
     .contact p + p { margin-top: 8px; }
     .detail, .date, .tagline { color: var(--muted); }
     .summary { margin-top: 14px; padding: 18px 22px; border-left: 4px solid var(--accent-warm); background: #f7faf9; font-size: 16px; line-height: 1.58; }
+    .experience h2 { margin-bottom: 16px; }
     .entry { padding-bottom: 22px; }
     .entry + .entry { padding-top: 22px; border-top: 1px solid var(--line); }
     .date { margin: 4px 0 12px; font-size: 14px; font-weight: 650; }
@@ -56,7 +57,7 @@
     <header>
       <div>
         <h1>Sven Guthe</h1>
-        <p class="role">Senior Cloud Architect | Cloud &amp; Software Architecture</p>
+        <p class="role">Consulting Manager | Cloud &amp; Software Architecture</p>
       </div>
       <img class="portrait" src="81df36a1-63ae-4e5a-a68b-966d12ccd080.jpg" alt="Portrait of Sven Guthe">
     </header>
@@ -94,40 +95,41 @@
       <div>
         <section>
           <h2>Profile</h2>
-          <p class="summary">Senior Cloud Architect with experience in automotive and manufacturing environments, industrial cloud solutions, big data platforms, and software and enterprise architecture. I combine scalable Kubernetes and OpenShift platforms, security by design and modern software architecture with dependable delivery in IT/OT contexts. My focus is translating technical visions into maintainable, secure solutions that create measurable business value.</p>
+          <p class="summary">Consulting Manager with experience in automotive and manufacturing environments, industrial cloud solutions, big data platforms, and software and enterprise architecture. I combine scalable Kubernetes and OpenShift platforms, security by design and modern software architecture with delivery in IT/OT contexts.</p>
         </section>
 
-        <section>
+        <section class="experience">
           <h2>Professional Experience</h2>
           <article class="entry">
             <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/MHP_Management-_und_IT-Beratung_logo.svg?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="MHP logo"><div><h3>Manager | Cloud Architect</h3><p class="date">MHP GmbH, Dresden / Ludwigsburg | since 07/2026</p></div></div>
             <ul>
-              <li>Develop scalable, secure and future-ready cloud architectures in industrial and automotive contexts.</li>
-              <li>Architecture work for Kubernetes, OpenShift and industrial cloud solutions, with a focus on platform capability and operations.</li>
-              <li>Translating technical visions into sustainable architecture decisions and successful implementations with measurable business value.</li>
-              <li>Leading and developing team members while strengthening architecture and cloud capabilities.</li>
+              <li>Lead the design of scalable, secure and future-ready cloud architectures for industrial and automotive environments.</li>
+              <li>Shape Kubernetes, OpenShift and industrial cloud platforms with a focus on operability, resilience and sustainable delivery.</li>
+              <li>Drive the implementation of AI solutions for manufacturing and translate technical vision into pragmatic architecture decisions.</li>
+              <li>Own DevOps processes end to end, from software delivery and CI/CD to secure, reliable operations.</li>
+              <li>Develop team members and strengthen architecture and cloud capabilities across the organisation.</li>
             </ul>
           </article>
           <article class="entry">
             <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/MHP_Management-_und_IT-Beratung_logo.svg?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="MHP logo"><div><h3>Senior IT Consultant</h3><p class="date">MHP GmbH, Dresden / Ludwigsburg | 05/2023 - 06/2026</p></div></div>
             <ul>
-              <li>IT consulting and architecture in IT/OT environments, with a focus on industrial cloud solutions and AI.</li>
-              <li>Data engineering and backend development using Python, FastAPI, SQLAlchemy and SQL.</li>
-              <li>Designed and implemented CI/CD pipelines including security and licence scans, as well as Kubernetes / OpenShift deployment concepts.</li>
-              <li>Led the AI community to promote internal knowledge exchange, projects and innovation.</li>
+              <li>Advised clients on IT/OT architecture with a focus on industrial cloud solutions and AI.</li>
+              <li>Designed and built data-engineering and backend services using Python, FastAPI, SQLAlchemy and SQL.</li>
+              <li>Designed, implemented and owned DevOps processes, including CI/CD pipelines, security and licence scans, and Kubernetes / OpenShift deployment concepts.</li>
+              <li>Led the AI community to foster internal knowledge exchange, new initiatives and innovation.</li>
             </ul>
           </article>
           <article class="entry">
             <div class="employer"><img class="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6PxxnoqwgT5qdgyoYNbi0YQ86lG8hI4XwzRUbJY891sd7WEo3G6PuA&amp;s=10" alt="Intenta / Venteq logo"><div><h3>Team Lead, Product Owner, Development Engineer</h3><p class="date">Intenta GmbH, Chemnitz | 10/2017 - 04/2023</p></div></div>
             <ul>
-              <li>Line manager for 15-20 employees, working students and cooperative education students; responsible for recruiting, staffing and capability planning.</li>
+              <li>Led 15-20 employees, working students and cooperative education students; owned recruiting, staffing and capability development.</li>
               <li>Owned a big data platform based on the AWS SMACK stack and its data-processing software components.</li>
-              <li>End-to-end responsibility across backend, cloud integration, CI/CD (Jenkins), testing, ASPICE processes, frontend and REST APIs.</li>
+              <li>Held end-to-end responsibility for backend engineering, cloud integration, CI/CD with Jenkins, testing, ASPICE processes, frontend and REST APIs.</li>
             </ul>
           </article>
           <article class="entry">
             <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/63/DB-Systel-gmbh-logo.png?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="DB Systel logo"><div><h3>Cooperative Degree Programme</h3><p class="date">DB Systel GmbH, Mannheim / Frankfurt | 10/2014 - 09/2017</p></div></div>
-            <ul><li>Software development and project management; programming with Java and R.</li></ul>
+            <ul><li>Contributed to software development and project management, with a focus on Java and R.</li></ul>
           </article>
         </section>
 
@@ -139,6 +141,14 @@
           <div class="cert"><a href="https://www.credly.com/badges/eb4ddf93-622f-4a2c-a845-11ef83f4cd5c/linked_in_profile" target="_blank" rel="noreferrer"><strong>AWS Certified Solutions Architect - Associate</strong><small>Amazon Web Services | 03/2023 - 03/2026</small></a></div>
           <div class="cert"><strong>PeopleCert DevOps Fundamentals</strong><small>PeopleCert | 04/2022</small></div>
           <div class="cert"><a href="https://www.credly.com/badges/2987f024-1bae-4a4a-ac74-5f86d76d9d9a/public_url" target="_blank" rel="noreferrer"><strong>Certified SAFe 5 Product Owner / Product Manager</strong><small>Scaled Agile Inc. | 11/2021 - 11/2022</small></a></div>
+          <div class="cert"><strong>ITIL Foundation Certificate in IT Service Management</strong><small>AXELOS Global Best Practice | 08/2016</small></div>
+        </section>
+
+        <section>
+          <h2>Professional Development</h2>
+          <div class="cert"><strong>Connectware Administrator Training</strong><small>Cybus | 06/2025</small></div>
+          <div class="cert"><strong>Leadership Training for Emerging Managers</strong><small>Cybus | 03/2022</small></div>
+          <div class="cert"><strong>In-house Scrum Master Training</strong><small>Cybus | 06/2025</small></div>
         </section>
 
         <section>
@@ -146,7 +156,13 @@
           <div class="education">
             <p><strong>Bachelor of Science (Cooperative Degree), Applied Computer Science</strong><span class="detail">DHBW Mannheim | 2014 - 2017 | Final grade: 1.9</span></p>
             <p><strong>Master's Programme, Business Intelligence and Analytics</strong><span class="detail">TU Chemnitz | 2017 - 2019 | not completed</span></p>
+            <p><strong>German Abitur</strong><span class="detail">Georgius-Agricola-Gymnasium, Glauchau | 2006 - 2014 | Final grade: 2.5</span></p>
+            <p><strong>Vocational Qualification: IT Technical Assistant</strong><span class="detail">BSZ Glauchau | 2009 - 2013</span></p>
           </div>
+        </section>
+        <section>
+          <h2>Award</h2>
+          <div class="cert"><strong>DMV Mathematics Award for Outstanding Abitur Achievement</strong><small>German Mathematical Society | 2014</small></div>
         </section>
         <p class="footer">Callenberg, 5 September 2026</p>
       </div>
