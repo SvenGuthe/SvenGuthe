@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sven Guthe | Lebenslauf</title>
+  <style>
+    :root { --ink: #080808; --muted: #525252; --accent: #8cffd2; --accent-warm: #8c1eff; --line: #d9d9d9; --paper: #ffffff; --rail: #f4f4f4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #e9e9e9; color: var(--ink); font-family: "Avenir Next", "Helvetica Neue", sans-serif; font-size: 15px; line-height: 1.55; }
+    .page { max-width: 1160px; margin: 36px auto; overflow: hidden; background: var(--paper); box-shadow: 0 18px 50px rgba(0, 0, 0, .16); }
+    header { display: grid; grid-template-columns: 1fr 132px; gap: 36px; align-items: center; padding: 44px 56px 38px; border-top: 8px solid var(--accent); border-bottom: 1px solid var(--line); }
+    h1, h2, h3, p { margin: 0; }
+    h1 { font-size: 42px; font-weight: 700; letter-spacing: .07em; line-height: 1; text-transform: uppercase; }
+    .role { margin-top: 12px; color: var(--accent-warm); font-size: 15px; font-weight: 750; letter-spacing: .09em; line-height: 1.35; text-transform: uppercase; }
+    .portrait { width: 132px; height: 132px; border: 4px solid #fff; border-radius: 8px; box-shadow: 0 6px 18px rgba(23, 35, 52, .2); object-fit: cover; object-position: 50% 23%; }
+    .layout { display: grid; grid-template-columns: 276px minmax(0, 1fr); }
+    aside { padding: 38px 32px 46px 42px; background: var(--rail); }
+    .layout > div { padding: 38px 56px 46px; }
+    section + section { margin-top: 34px; }
+    h2 { color: var(--ink); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    aside h2 { margin-bottom: 14px; }
+    h3 { font-size: 18px; font-weight: 750; line-height: 1.3; }
+    .contact p + p { margin-top: 8px; }
+    .detail, .date, .tagline { color: var(--muted); }
+    .summary { margin-top: 14px; padding: 18px 22px; border-left: 4px solid var(--accent-warm); background: #f7faf9; font-size: 16px; line-height: 1.58; }
+    .entry { position: relative; padding-bottom: 22px; }
+    .entry + .entry { padding-top: 22px; border-top: 1px solid var(--line); }
+    .date { margin: 4px 0 12px; font-size: 14px; font-weight: 650; }
+    ul { margin: 0; padding-left: 20px; }
+    li + li { margin-top: 5px; }
+    .skills { display: grid; gap: 9px; }
+    .skill { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .rating { display: inline-flex; gap: 4px; flex: 0 0 auto; }
+    .rating i { width: 8px; height: 8px; border: 1.5px solid var(--accent-warm); border-radius: 50%; }
+    .rating i.on { background: var(--accent-warm); }
+    .cert { margin-bottom: 12px; }
+    .cert strong { display: block; font-size: 14px; }
+    .cert small { color: var(--muted); font-size: 13px; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    .profile-link { display: inline-block; margin-top: 8px; color: var(--accent-warm); font-weight: 700; }
+    .employer { display: flex; gap: 12px; align-items: flex-start; }
+    .company-logo { width: 42px; height: 42px; flex: 0 0 42px; padding: 4px; border: 1px solid var(--line); border-radius: 5px; background: #fff; object-fit: contain; }
+    .employer > div { min-width: 0; }
+    .cert a { display: block; }
+    .cert a:hover strong { color: var(--accent); }
+    .education { display: grid; gap: 13px; }
+    .education strong { display: block; }
+    .footer { margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @page { size: A4; margin: 12mm; }
+    @media print { body { background: #fff; font-size: 10pt; } .page { max-width: none; margin: 0; box-shadow: none; } header { padding: 10mm 12mm 8mm; } .layout { grid-template-columns: 52mm minmax(0, 1fr); } aside { padding: 8mm 6mm 10mm 10mm; } .layout > div { padding: 8mm 12mm 10mm 9mm; } section + section { margin-top: 7mm; } .summary { font-size: 10pt; } .entry { break-inside: avoid; } }
+    @media screen and (max-width: 760px) { body { font-size: 14px; } .page { margin: 0; } header { grid-template-columns: 1fr 94px; gap: 20px; padding: 30px 24px 26px; } h1 { font-size: 31px; } .role { font-size: 12px; } .portrait { width: 94px; height: 94px; } .layout { grid-template-columns: 1fr; } .layout > div { order: 1; padding: 30px 24px 36px; } aside { order: 2; padding: 30px 24px; } .summary { font-size: 15px; padding: 16px; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <h1>Sven Guthe</h1>
+        <p class="role">Senior Cloud Architect | Cloud &amp; Software Architecture</p>
+      </div>
+      <img class="portrait" src="81df36a1-63ae-4e5a-a68b-966d12ccd080.jpg" alt="Porträt von Sven Guthe">
+    </header>
+
+    <div class="layout">
+      <aside>
+        <section class="contact">
+          <h2>Kontakt</h2>
+          <a class="profile-link" href="https://www.linkedin.com/in/sven-guthe/" target="_blank" rel="noreferrer">LinkedIn / sven-guthe</a>
+        </section>
+        <section>
+          <h2>Kompetenzen</h2>
+          <div class="skills">
+            <div class="skill"><span>Automotive &amp; Industrial Cloud</span><span class="rating" aria-label="5 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <div class="skill"><span>Kubernetes / OpenShift</span><span class="rating" aria-label="5 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <div class="skill"><span>Software Architecture</span><span class="rating" aria-label="5 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <div class="skill"><span>Python / FastAPI</span><span class="rating" aria-label="5 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+            <div class="skill"><span>Security Architecture / DevSecOps</span><span class="rating" aria-label="4 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <div class="skill"><span>Data Engineering / SQL</span><span class="rating" aria-label="4 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <div class="skill"><span>Kafka / MQTT / Spark</span><span class="rating" aria-label="4 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+            <div class="skill"><span>Java / Scala / TypeScript</span><span class="rating" aria-label="4 von 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></div>
+          </div>
+        </section>
+        <section>
+          <h2>Sprachen</h2>
+          <p>Deutsch <span class="tagline">(Muttersprache)</span></p>
+          <p>Englisch <span class="tagline">(verhandlungssicher)</span></p>
+        </section>
+        <section>
+          <h2>Tools</h2>
+          <p class="tagline">Helm / Helmfile, Argo CD, Docker, AWS, PostgreSQL / MySQL, Grafana / Prometheus, GitHub / GitLab, Atlassian Suite</p>
+        </section>
+      </aside>
+
+      <div>
+        <section>
+          <h2>Profil</h2>
+          <p class="summary">Senior Cloud Architect mit Erfahrung im Automotive- und Manufacturing-Umfeld sowie in Industrial Cloud Solutions, Big-Data-Plattformen und Software- und Enterprise-Architektur. Ich verbinde skalierbare Kubernetes- und OpenShift-Plattformen, Security by Design und moderne Softwarearchitektur mit belastbarer Umsetzung im IT/OT-Kontext. Mein Fokus: technische Visionen in wartbare, sichere und messbar wertstiftende Lösungen zu überführen.</p>
+        </section>
+
+        <section>
+          <h2>Berufserfahrung</h2>
+          <article class="entry">
+            <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/MHP_Management-_und_IT-Beratung_logo.svg?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="MHP Logo"><div><h3>Manager | Cloud Architect</h3><p class="date">MHP GmbH, Dresden / Ludwigsburg | seit 07/2026</p></div></div>
+            <ul>
+              <li>Entwicklung skalierbarer, sicherer und zukunftsfähiger Cloud-Architekturen im industriellen und Automotive-Kontext.</li>
+              <li>Architekturarbeit für Kubernetes-, OpenShift- und Industrial-Cloud-Lösungen mit Fokus auf Plattformfähigkeit und Betrieb.</li>
+              <li>Überführung technischer Visionen in tragfähige Architekturentscheidungen und erfolgreiche Umsetzungen mit messbarem Unternehmensnutzen.</li>
+              <li>Führung und Weiterentwicklung von Mitarbeitenden sowie Förderung von Architektur- und Cloud-Kompetenzen.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/MHP_Management-_und_IT-Beratung_logo.svg?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="MHP Logo"><div><h3>Senior IT-Consultant</h3><p class="date">MHP GmbH, Dresden / Ludwigsburg | 05/2023 - 06/2026</p></div></div>
+            <ul>
+              <li>IT-Beratung und Architektur im IT/OT-Umfeld mit Schwerpunkt Industrial Cloud Solutions und AI.</li>
+              <li>Data Engineering und Backend-Entwicklung mit Python, FastAPI, SQLAlchemy und SQL.</li>
+              <li>Design und Umsetzung von CI/CD-Pipelines einschließlich Security- und License-Scans sowie Deploymentkonzepten für Kubernetes / OpenShift.</li>
+              <li>Leitung der AI-Community für internen Wissensaustausch, Projekte und Innovationen.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="employer"><img class="company-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6PxxnoqwgT5qdgyoYNbi0YQ86lG8hI4XwzRUbJY891sd7WEo3G6PuA&amp;s=10" alt="Intenta / Venteq Logo"><div><h3>Teamlead, Product Owner, Development Engineer</h3><p class="date">Intenta GmbH, Chemnitz | 10/2017 - 04/2023</p></div></div>
+            <ul>
+              <li>Disziplinarische Führung von 15-20 Mitarbeitenden, Werkstudierenden und BA-Studierenden; Recruiting sowie Kompetenz- und Personalplanung.</li>
+              <li>Verantwortung für eine Big-Data-Plattform auf Basis des AWS-SMACK-Stacks und datenverarbeitende Softwarekomponenten.</li>
+              <li>End-to-End-Verantwortung in Backend, Cloud-Integration, CI/CD (Jenkins), Testing, ASPICE-Prozessen, Frontend und REST APIs.</li>
+            </ul>
+          </article>
+          <article class="entry">
+            <div class="employer"><img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/63/DB-Systel-gmbh-logo.png?utm_source=de.wikipedia.org&amp;utm_campaign=index&amp;utm_content=original" alt="DB Systel Logo"><div><h3>Duales Studium</h3><p class="date">DB Systel GmbH, Mannheim / Frankfurt | 10/2014 - 09/2017</p></div></div>
+            <ul><li>Softwareentwicklung und Projektmanagement; Programmierung mit Java und R.</li></ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Zertifizierungen</h2>
+          <div class="cert"><a href="https://www.credly.com/badges/095e4f66-ae33-401b-914a-e95a213b62c6/linked_in_profile" target="_blank" rel="noreferrer"><strong>Kubernetes and Cloud Native Security Associate (KCSA)</strong><small>The Linux Foundation | 2026</small></a></div>
+          <div class="cert"><a href="https://www.certible.com/badge/f518785e-e0a6-4e8e-9b8a-5aab25efbd7b/" target="_blank" rel="noreferrer"><strong>iSAQB Certified Professional for Software Architecture - Foundation Level (CPSA-F)</strong><small>iSAQB | 2026</small></a></div>
+          <div class="cert"><a href="https://www.credly.com/badges/30699c83-96fb-4567-a6f8-b2fabe644ba6/public_url" target="_blank" rel="noreferrer"><strong>TOGAF Enterprise Architecture Practitioner</strong><small>The Open Group | 11/2024</small></a></div>
+          <div class="cert"><a href="https://www.credly.com/badges/eb4ddf93-622f-4a2c-a845-11ef83f4cd5c/linked_in_profile" target="_blank" rel="noreferrer"><strong>AWS Certified Solutions Architect - Associate</strong><small>Amazon Web Services | 03/2023 - 03/2026</small></a></div>
+          <div class="cert"><strong>PeopleCert DevOps Fundamentals</strong><small>PeopleCert | 04/2022</small></div>
+          <div class="cert"><a href="https://www.credly.com/badges/2987f024-1bae-4a4a-ac74-5f86d76d9d9a/public_url" target="_blank" rel="noreferrer"><strong>Certified SAFe 5 Product Owner / Product Manager</strong><small>Scaled Agile Inc. | 11/2021 - 11/2022</small></a></div>
+        </section>
+
+        <section>
+          <h2>Ausbildung</h2>
+          <div class="education">
+            <p><strong>Bachelor of Science (Dual), Angewandte Informatik</strong><span class="detail">DHBW Mannheim | 2014 - 2017 | Abschlussnote 1,9</span></p>
+            <p><strong>Master Business Intelligence and Analytics</strong><span class="detail">TU Chemnitz | 2017 - 2019 | ohne Abschluss</span></p>
+          </div>
+        </section>
+        <p class="footer">Callenberg, 05.09.2026</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
